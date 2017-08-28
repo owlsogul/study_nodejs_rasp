@@ -1,0 +1,20 @@
+{
+  "name": "study_nodejs_rasp",
+  "version": "1.0.0",
+  "description": "this folder is made for study of nodejs with raspberry pi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/owlsogul/study_nodejs_rasp.git"
+  },
+  "author": "owlsogul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/owlsogul/study_nodejs_rasp/issues"
+  },
+  "homepage": "https://github.com/owlsogul/study_nodejs_rasp#readme"
+}
