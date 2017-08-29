@@ -22,3 +22,7 @@ console.log("router for practice is being loaded");
 var practice_router = require('./practice_router/practice_router.js');
 app.use('/birds', practice_router);
 console.log("router for practice is loaded");
+
+//
+var webcoder_router = require('./webcoder/router');
+app.use('/webcoder', webcoder_router);
