@@ -14,3 +14,11 @@ app.get('/', function(req, res){
   res.send('Root');
   res.sendFile('/public/index.html');
 });
+
+
+console.log("router for practice is being loaded");
+// var practice_router = require('./practice_router/practice_router');
+// 위와 아래가 다를 게 없다는 것을 알 수 있음.
+var practice_router = require('./practice_router/practice_router.js');
+app.use('/birds', practice_router);
+console.log("router for practice is loaded");
