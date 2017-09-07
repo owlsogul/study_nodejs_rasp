@@ -1,0 +1,24 @@
+아래는 리눅스(라즈베리파이)에서 발생한 오류이다.
+
+events.js:160
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EACCES 0.0.0.0:81
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at Server._listen2 (net.js:1245:19)
+    at listen (net.js:1294:10)
+    at Server.listen (net.js:1390:5)
+    at EventEmitter.listen (/home/pi/Developement/study_nodejs_rasp/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/pi/Developement/study_nodejs_rasp/index.js:9:5)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+
+EACCES 는 포트가 열리지 않아 발생하는 오류라고 한다.
+기존에 81번 포트를 3000번 포트로 변경해주니 오류가 해결되었다.
+==> 추가사항
+nodejs error eacces 문제에 대해 구글링을 해보니 권한 관련 키워드가 많이 보였다.
+그래서 sudo npm start 를 해줬더니 정상적으로 열렸다.
+삽질을 조금 해준 것 같다.
